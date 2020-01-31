@@ -18,9 +18,6 @@ function setup() {
     print(treeStatus);
     print(treeDia);
     print(stumpDia);
-
-
-
 }
 
 function draw() {

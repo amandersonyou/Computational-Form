@@ -1,6 +1,6 @@
 ﻿tree_id,tree_dbh,stump_diam,status
 190425,13,0,Alive
-211205,0,16,Stump
+211205,16,16,Stump
 204202,12,0,Alive
 201494,24,0,Alive
 208346,20,0,Alive
@@ -241,11 +241,11 @@
 158174,30,0,Alive
 165576,6,0,Alive
 192569,2,0,Dead
-179766,0,30,Stump
+179766,30,30,Stump
 191379,5,0,Alive
 191380,6,0,Alive
-180619,0,10,Stump
+180619,10,10,Stump
 184295,0,0,Dead
-208828,0,15,Stump
+208828,10,15,Stump
 127639,4,0,Alive
-181973,0,25,Stump
+181973,25,25,Stump
