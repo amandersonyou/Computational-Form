@@ -1,5 +1,6 @@
 // inspired by elenaleegold's facemaker: https://github.com/elenaleegold/faceMaker
 // individual challenge for comp form parameters week
+// most images from Unsplash.com
 
 var ears1, ears2, ears3, ears4, ears5, ears6, ears7;
 var eyes1, eyes2, eyes3, eyes4, eyes5;
