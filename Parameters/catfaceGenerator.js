@@ -1,14 +1,14 @@
-
 // inspired by elenaleegold's facemaker: https://github.com/elenaleegold/faceMaker
-  
-let ears1, ears2, ears3, ears4, ears5, ears6, ears7;
-let eyes1, eyes2, eyes3, eyes4, eyes5;
-let nose1, nose2, nose3, nose4, nose5, nose6, nose7, nose8, nose9, nose10, nose11;
+// individual challenge for comp form parameters week
 
-let sliderEars, sliderEyes, sliderNose;
+var ears1, ears2, ears3, ears4, ears5, ears6, ears7;
+var eyes1, eyes2, eyes3, eyes4, eyes5;
+var nose1, nose2, nose3, nose4, nose5, nose6, nose7, nose8, nose9, nose10, nose11;
+
+var sliderEars, sliderEyes, sliderNose;
 
 function preload() {
-  
+  // load images for cat faces
   ears1 = loadImage('CatFaces/ears/catears1.jpeg');
   ears2 = loadImage('CatFaces/ears/catears2.jpeg');
   ears3 = loadImage('CatFaces/ears/catears3.jpeg');
@@ -22,6 +22,7 @@ function preload() {
   eyes3 = loadImage('CatFaces/cateyes/cateyes3.jpeg');
   eyes4 = loadImage('CatFaces/cateyes/cateyes4.jpeg');
   eyes5 = loadImage('CatFaces/cateyes/cateyes5.jpeg');
+  eyes6 = loadImage('CatFaces/cateyes/cateyes6.jpeg');
 
   nose1 = loadImage('CatFaces/catnose/catnose1.jpeg');
   nose2 = loadImage('CatFaces/catnose/catnose2.jpeg');
@@ -34,23 +35,25 @@ function preload() {
   nose9 = loadImage('CatFaces/catnose/catnose9.jpeg');
   nose10 = loadImage('CatFaces/catnose/catnose10.jpeg');
   nose11 = loadImage('CatFaces/catnose/catnose11.jpeg');
+  nose12 = loadImage('CatFaces/catnose/catnose12.jpeg');
 
 }
 
 function setup() {
-  createCanvas(900, 900);
+  createCanvas(800, 600);
   textSize(14);
 
+// set up sliders for ears, eyes, and nose
   sliderEars = createSlider(1, 7, 1);
-  sliderEars.position(700, 100);
+  sliderEars.position(500, 100);
   sliderEars.style('width', '150px');
 
-  sliderEyes = createSlider(1, 5, 1);
-  sliderEyes.position(700, 300);
+  sliderEyes = createSlider(1, 6, 1);
+  sliderEyes.position(500, 230);
   sliderEyes.style('width', '150px');
 
-  sliderNose = createSlider(1, 11, 1);
-  sliderNose.position(700, 500);
+  sliderNose = createSlider(1, 12, 1);
+  sliderNose.position(500, 370);
   sliderNose.style('width', '150px');
 
 }
@@ -59,27 +62,19 @@ function setup() {
 function draw() {
   background(255);
 
-  text("Ears", 700, 140);
-  text("Nose", 700, 340);
-  text("Mouth", 700, 540);
+  text("Ears", 500, 140);
+  text("Eyes", 500, 270);
+  text("Nose", 500, 410);
 
-  var earVal = (sliderEars.value());
+// load cat face images based on slider value
+  var earVal = eval("ears" + sliderEars.value());
   image(earVal, 0, 0);
 
-  var eyeVal = (sliderEyes.value());
-  image(eyeVal, 0, 0);
+  var eyeVal = eval("eyes" + sliderEyes.value());
+  image(eyeVal, 0, 150);
 
-  var noseVal = (sliderNose.value());
-  image(noseVal, 0, 0);
-
-  // var earVal = eval("ear" + sliderEars.value());
-  // image(earVal, 0, 0);
-
-  // var eyeVal = eval("eye" + sliderEyes.value());
-  // image(eyeVal, 0, 0);
-
-  // var noseVal = eval("nose" + sliderNose.value());
-  // image(noseVal, 0, 0);
+  var noseVal = eval("nose" + sliderNose.value());
+  image(noseVal, 0, 275);
 
 
 
