@@ -18,6 +18,22 @@ function setup() {
     scribble.bowing = 0; // controls the bowing curve of the lines to not be too wide
     stroke(246, 238, 214); // cream matches dropper sourced color of inspo
 
+// let myArray=[]
+//  for (var i =0; i < 50; i++) {
+//      let smallArray= [] 
+//      for (var j=0 ; j < 4; j++)
+//      { variable1 += 10
+//          smallArray.push(0, variable1, width, variable1) //inseatd of zero it would be dynamic variables
+//      }
+//      myArray.push(smallArray)
+//  }
+
+//  for (var i = 0; i < myArray.length; i ++) {
+//     scribble.scribbleLine(myArray.smallArray[0], myArray.smallArray[1], )
+
+//  }
+
+
 
     // batch of horizontal lines, increase by 10 pixels for each
     scribble.roughness = 2;
