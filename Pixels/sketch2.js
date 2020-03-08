@@ -4,7 +4,8 @@
 let phoneImage;
 
 function preload() {
-  phoneImage = loadImage('https://images.unsplash.com/photo-1557180295-76eee20ae8aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80');  
+//   phoneImage = loadImage('https://images.unsplash.com/photo-1557180295-76eee20ae8aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80');  
+phoneImage = loadImage('https://raw.githubusercontent.com/amandersonyou/Computational-Form/master/Pixels/assets/PhoneV1.png');
 }
 
 function setup() {
