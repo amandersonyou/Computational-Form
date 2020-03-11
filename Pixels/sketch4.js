@@ -2,7 +2,7 @@
 var ostKat;
 
 function preload() {
-    ostKat = loadImage("https://raw.githubusercontent.com/amandersonyou/Computational-Form/master/Pixels/assets/apparatWalls.jpeg");
+    ostKat = loadImage("https://raw.githubusercontent.com/amandersonyou/Computational-Form/master/Pixels/assets/ost.png");
 }
 
 function setup() {
