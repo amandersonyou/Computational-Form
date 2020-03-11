@@ -1,5 +1,5 @@
 // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js
-// image: Apparat's album art for "Walls" 
+// image: Apparat's album art for "Walls" https://www.apparat.net/
 
 let walls;
 
@@ -9,7 +9,7 @@ walls = loadImage('https://raw.githubusercontent.com/amandersonyou/Computational
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(600, 600);
 }
 
 function draw() {
@@ -17,7 +17,7 @@ function draw() {
   noSmooth();
 
   alterImage(walls);
-  image(walls, 0, 0, windowWidth, windowHeight);
+  image(walls, 0, 0, 600, 600);
 
   noLoop();
 }
@@ -39,14 +39,14 @@ function alterImage(img) {
   for (let y = 0; y < img.height; y ++) {
     for (let x = 0; x < img.width; x ++) {
         colorMode(HSB);
-        // setting the colors, randomizing some values
-        let c1 = color(6, (random(30,90)), (random(10,75)));
-        let c2 = color((random(20, 170)), 91, 80);
+        let c1 = color(341, 94, 58);
+        let c2 = color(128, 52, 58);
         let c3 = color(45, (random(30,180)), 90)
-        // dividing up the pixel patterns
-        img.set(x, y/4, c1);
-        img.set(x/2, y*2.5, c2);
-        img.set(x*4, y*2, c3);
+        img.set(x, y*8, c1);
+        img.set(x, y*10, c1);
+        img.set(x/2, y*4, c3);
+        // img.set(x*10, (y*(random(8,20))), c2);
+        img.set(x*10, y/2, c2);
     }
   }
   img.updatePixels();
