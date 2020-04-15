@@ -1,8 +1,10 @@
 // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
-var ostKat;
+// Image by Amanda Anderson-You of a cat named Ost (Cheese) in Copenhagen, 2019
+
+let ostKat;
 
 function preload() {
-    ostKat = loadImage("https://raw.githubusercontent.com/amandersonyou/Computational-Form/master/Pixels/assets/ost.png");
+    ostKat = loadImage("https://raw.githubusercontent.com/amandersonyou/Computational-Form/master/Pixels/assets/ostKat.png");
 }
 
 function setup() {
@@ -22,7 +24,7 @@ function draw() {
             var c = lightness(in_color);
            // console.log(lightness(in_color))      
           if(c<=30){
-          fill(150,150,c*0.2);
+          fill(190,190,c*0.2);
           ellipse(x,y, c*0.1);
           } else if(c>30&&c<=40){
           fill(150,150,c);
@@ -32,7 +34,7 @@ function draw() {
             ellipse(x,y,c*0.1);
           } else if(c>50){
             fill(150,190,c*4);
-          ellipse(x,y,c*0.08);
+          ellipse(x,y,c*0.09);
           }
 
         }
